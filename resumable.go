@@ -33,7 +33,7 @@ type Hash interface {
 	hash.Hash
 
 	// Len returns the number of bytes written to the Hash so far.
-	Len() uint64
+	Len() int64
 
 	// State returns a snapshot of the state of the Hash.
 	State() ([]byte, error)
